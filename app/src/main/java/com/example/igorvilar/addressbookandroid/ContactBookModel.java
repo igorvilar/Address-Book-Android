@@ -5,50 +5,10 @@ package com.example.igorvilar.addressbookandroid;
  */
 public class ContactBookModel {
 
+    public int IdContact;
+    public String Name;
+    public String Phone;
+    public String Address;
 
-    int IdContact;
-    String Name;
-    String Phone;
-    String Address;
-
-
-    public ContactBookModel(int IdContact, String Name, String Phone, String Address) {
-        this.IdContact = IdContact;
-        this.Name = Name;
-        this.Phone = Phone;
-        this.Address = Address;
-    }
-
-    public int getIdContact() {
-        return IdContact;
-    }
-
-    public void setIdContact(int idContact) {
-        IdContact = idContact;
-    }
-
-    public String getName() {
-        return Name;
-    }
-
-    public void setName(String name) {
-        Name = name;
-    }
-
-    public String getPhone() {
-        return Phone;
-    }
-
-    public void setPhone(String phone) {
-        Phone = phone;
-    }
-
-    public String getAddress() {
-        return Address;
-    }
-
-    public void setAddress(String address) {
-        Address = address;
-    }
 
 }

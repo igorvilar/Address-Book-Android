@@ -10,7 +10,7 @@
     tools:context="com.example.igorvilar.addressbookandroid.EditContactActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editTextNameEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -21,34 +21,34 @@
         android:hint="Name" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editTextAddressEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/editTextNameEdit"
         android:hint="Address" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editTextPhoneEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText2"
+        android:layout_below="@+id/editTextAddressEdit"
         android:ems="10"
         android:hint="Phone"
         android:inputType="phone" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonDeteteContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/editTextPhoneEdit"
         android:layout_centerHorizontal="true"
         android:text="Apagar contato" />
 
