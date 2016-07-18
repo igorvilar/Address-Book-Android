@@ -22,6 +22,7 @@ public class EditContactActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_contact);
+        setTitle("Editar");
         editTextName = (EditText) findViewById(R.id.editTextNameEdit);
         editTextAddress = (EditText) findViewById(R.id.editTextAddressEdit);
         editTextPhone = (EditText) findViewById(R.id.editTextPhoneEdit);
@@ -78,7 +79,9 @@ public class EditContactActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 MySQLiteHelper.getInstance(EditContactActivity.this).deleteSelectedContactsAddressBook(idContactSelect);
-                finish();
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
             }
 
         });

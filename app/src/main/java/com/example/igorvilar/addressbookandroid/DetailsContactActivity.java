@@ -20,7 +20,6 @@ public class DetailsContactActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details_contact);
         setTitle("Detalhes");
-
         Intent intent = getIntent();
         Bundle b = intent.getExtras();
         idContactSelect = b.getInt("idContactSelect");
